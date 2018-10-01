@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5C895D7121619D7E00C719A7 /* BezierPathUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C895D6F21619D7E00C719A7 /* BezierPathUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C895D7821619D9E00C719A7 /* BezierPathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C895D7721619D9E00C719A7 /* BezierPathUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C895D6C21619D7E00C719A7 /* BezierPathUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BezierPathUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C895D6F21619D7E00C719A7 /* BezierPathUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BezierPathUtils.h; sourceTree = "<group>"; };
 		5C895D7021619D7E00C719A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C895D7721619D9E00C719A7 /* BezierPathUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezierPathUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				5C895D6F21619D7E00C719A7 /* BezierPathUtils.h */,
+				5C895D7721619D9E00C719A7 /* BezierPathUtils.swift */,
 				5C895D7021619D7E00C719A7 /* Info.plist */,
 			);
 			path = BezierPathUtils;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					5C895D6B21619D7E00C719A7 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C895D7821619D9E00C719A7 /* BezierPathUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		5C895D7521619D7E00C719A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zats.BezierPathUtils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		5C895D7621619D7E00C719A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
